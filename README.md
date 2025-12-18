@@ -43,6 +43,10 @@ Quand un joueurs est en matche, il peut :
     - envoyer au server la colone dans laquelle il vas jouer
     - recevoir la grille
 
+
+
+
+
 # Architecture
 
 ProjetVirtualisation/
@@ -71,4 +75,3 @@ ProjetVirtualisation/
 │
 └── shared/
     └── protocol.py
-
