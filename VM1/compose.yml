@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+
+  player1_vm1:
+    build:
+      context: ../player
+      dockerfile: Dockerfile
+    container_name: puissance4_player1_vm1
+    environment:
+      - PLAYER_NAME=player1_vm1
+      - SERVER_HOST=192.168.200.21
+      - SERVER_PORT=5000
+    restart: unless-stopped
+
+  player2_vm1:
+    build:
+      context: ../player
+      dockerfile: Dockerfile
+    container_name: puissance4_player2_vm1
+    environment:
+      - PLAYER_NAME=player2_vm1
+      - SERVER_HOST=
+      - SERVER_PORT=5000
+    restart: unless-stopped
